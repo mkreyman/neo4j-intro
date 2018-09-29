@@ -1,0 +1,35 @@
+{
+  "name": "My Preso",
+  "sections": [
+    {
+      "section": "title"
+    },
+    {
+      "section": "comparison"
+    },
+    {
+      "section": "terminology"
+    },
+    {
+      "section": "cypher"
+    },
+    {
+      "section": "demo"
+    },
+    {
+      "section": "use_cases"
+    },
+    {
+      "section": "import_data"
+    },
+    {
+      "section": "graphql"
+    },
+    {
+      "section": "development"
+    },
+    {
+      "section": "conclusion"
+    }
+  ]
+}
