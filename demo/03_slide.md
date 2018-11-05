@@ -3,14 +3,17 @@
 
 * Actors who played in some movie
 
-        MATCH (m:Movie {title: 'Forrest Gump'})<-[:ACTS_IN]-(a:Actor)
-        RETURN a
+        MATCH (m:Movie {title: 'Sleepless in Seattle'})<-[:ACTED_IN]-(a)
+        RETURN m, a
 
-* Find the actors with 20+ movies, and the movies in which they acted
+* Find the actors with 5+ movies, and the movies in which they acted
 
-        MATCH (a:Actor)-[:ACTS_IN]->(m:Movie)
+        MATCH (a:Person)-[:ACTED_IN]->(m:Movie)
         WITH a, collect(m.title) AS movies
-        WHERE length(movies) >= 20
+        WHERE length(movies) >= 5
         RETURN a, movies
-        ORDER BY length(movies) DESC
-        LIMIT 10
+
+* Find movies released in the 1990s
+
+        MATCH (nineties:Movie) WHERE nineties.released >= 1990 AND nineties.released < 2000
+        RETURN nineties.title

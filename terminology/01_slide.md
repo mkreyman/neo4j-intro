@@ -30,5 +30,4 @@
 
 * Model Facts as Nodes. When two or more domain entities interact for a period of time, a fact emerges. We represent a fact as a separate node with connections to each of the entities engaged in that fact. Modeling an action in terms of its product — that is, in terms of the thing that results from the action—produces a similar structure: an intermediate node that represents the outcome of an interaction between two or more entities. We can use timestamp properties on this intermediate node to represent start and end times.
 
-
 ~~~ENDSECTION~~~

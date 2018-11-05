@@ -1,14 +1,14 @@
 <!SLIDE bullets>
 # Demo 1: Dependencies graph (<code>mix graph_deps</code>)
 
-* What packages depend on <i>poison</i>? 
+* What packages depend on <i>absinthe</i>? 
 
-        MATCH path = (d1)-->(p:Package {name: "poison"})<--(d2)
+        MATCH path = (p:Package {name: "absinthe"})<--(d)
         RETURN path
 
-* What packages does <i>poison</i> depend on?
+* What packages does <i>absinthe</i> depend on?
 
-        MATCH path = (p:Package {name: "poison"})-->(d)
+        MATCH path = (p:Package {name: "absinthe"})-->(d)
         RETURN path
 
 
