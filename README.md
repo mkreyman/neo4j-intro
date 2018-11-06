@@ -5,8 +5,8 @@
         gem install showoff
 
 2. Pull this repo
- 
-        git pull https://github.com/mkreyman/neo4j-intro.git
+
+        git clone https://github.com/mkreyman/neo4j-intro.git
 
 3. Run the presentation
 
